@@ -40,8 +40,8 @@ Optional:
 ### Usage:
 Download the image file.  
 Download rpi-img2usb.py.  
-Make the file executable: `chmod +x rpi-img2usb.py`
-Run the script `sudo rpi-img2usb.py path/to/imagefile.img`  
+Make the file executable: `chmod +x rpi-img2usb.py`  
+Run the script: `sudo rpi-img2usb.py path/to/imagefile.img`  
 **_Note_: Elevated privledges are needed for partitioning, mounting, copying and modification of the necessary files.**
 
 After the script has finished change the boot order using `raspi-config` and reboot.
