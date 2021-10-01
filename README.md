@@ -42,7 +42,7 @@ Download the image file.
 Download raspi-img2headless.py.  
 Make the file executable: `chmod +x raspi-img2headless.py`  
 Run the script: `sudo raspi-img2headless.py path/to/imagefile.img`  
-**_Note_: Elevated privledges are needed for partitioning, mounting, copying and modification of the necessary files.**
+**_Note_: Elevated privileges are needed for partitioning, mounting, copying and modification of the necessary files.**
 
 After the script has finished change the boot order using `raspi-config` and reboot.
 

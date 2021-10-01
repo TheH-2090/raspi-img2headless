@@ -9,7 +9,7 @@ from getpass import getpass
 class Imager(object):
     def __init__(self):
         self.init_messages()
-        self.check_priviledges()
+        self.check_privileges()
         self.init_settings()
         self.selection_loop()
         self.execute_workflow()
@@ -30,7 +30,7 @@ class Imager(object):
             self.exception_handler(self.modify_hostname, 9)
         self.perform_cleanup()
 
-    def check_priviledges(self):
+    def check_privileges(self):
         if getuid() != 0:
                 self.error_quit('Error: ' + self.error_messages[21])
 
