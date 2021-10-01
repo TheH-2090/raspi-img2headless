@@ -1,6 +1,6 @@
-# rpi-img2usb
+# raspi-img2headless
 ## Description:
-A Python script to copy an .img to a usb drive and support with the initial headless setup.
+A Python script to copy an .img to a connected drive (microSD or usb) and support with the initial headless setup.
 
 ## Table of contents:
 - [History](#history)
@@ -9,7 +9,7 @@ A Python script to copy an .img to a usb drive and support with the initial head
 
 ## History:
 Trying different operating systems on the Raspberry Pi leads to repetetive tasks just to get the basic system up and running.  
-**rpi-img2usb can be ran directly from the sd-card and install a fresh downloaded image directly to an attached usb drive.**
+**raspi-img2headless can be ran directly from the sd-card and install a fresh downloaded image directly to an attached usb drive.**
 
 Usually the following steps have to be carried out to install a new image:
 - Writing image to sd-card
@@ -39,9 +39,9 @@ Optional:
 
 ### Usage:
 Download the image file.  
-Download rpi-img2usb.py.  
-Make the file executable: `chmod +x rpi-img2usb.py`  
-Run the script: `sudo rpi-img2usb.py path/to/imagefile.img`  
+Download raspi-img2headless.py.  
+Make the file executable: `chmod +x raspi-img2headless.py`  
+Run the script: `sudo raspi-img2headless.py path/to/imagefile.img`  
 **_Note_: Elevated privledges are needed for partitioning, mounting, copying and modification of the necessary files.**
 
 After the script has finished change the boot order using `raspi-config` and reboot.
